@@ -313,4 +313,133 @@ padding-bottom: 45px;
 }
 
 
-@media screen and (max-width: 768px) and (max-width: 1024px){}
+@media screen and (max-width: 768px) and (max-width: 1024px){
+    .body{
+        width: 768px;
+        }
+        
+/* tengo duda aquí pqq si le subo el with, las cosas se ponen en medio*/
+
+        .header__lead{
+        width: 720px;
+        }
+        
+        .header__lead-title{
+        width: 100%;
+        }
+        
+        .header__lead-subtitle{
+        width: 100%;
+        margin-top: 99px;
+        }
+        
+        .header__lead-image{
+        margin-top: 69px;
+        height: 634px;
+        margin-bottom: 55px;
+        }
+        
+        .intro__title{
+        width: 720px;
+        height: 232px;
+        margin-bottom: 15px;
+        }
+        
+        .intro__subtitle{
+        width: 720px;
+        }
+        
+        .intro__subtitle-author{
+        margin-bottom: 32px;
+        }
+        
+        .intro__paragraph{
+        margin-bottom: 64px;
+        
+        }
+        
+        .photo-grid{
+        width: 720px;
+        height: 1104px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 16px;
+        margin-bottom: 88px;
+        }
+        
+        .photo-grid__image{
+        width: 352px;
+        height: 264px;
+        }
+        
+        
+        .places{
+        width: 768px;
+        }
+        
+        
+        .places__article{
+        width: 720px;
+        display: grid;
+        grid-template-columns: minmax(396px, 1fr) minmax(439px, 1fr);
+        grid-template-rows: auto 1fr;
+        grid-gap: 28px;
+        padding-bottom: 50px;
+        row-gap: 50px;
+        padding: 56px 15px 13px 48px;
+        }
+        
+        .places__article-title{
+        height: 46px;
+        font-size: 42px;
+        line-height: 46px;
+        grid-column: 1;
+        grid-row: 1;
+        }
+        
+        .places__article-image{
+        width: 100%;
+        height: 340px;
+        }
+        
+        
+        .places__article-container-artist{
+        width: 100%;
+        height: 15pxpx;
+        }
+        
+        .places__article-container-name{
+        width: 100%;
+        height: 44px;
+        }
+        
+        .places__article-paragraphs-text{
+        font-size: 16px;
+        line-height: 26.08px;
+        padding-bottom: 14px;
+        }
+        
+        
+        .cover{
+        height: 746px;
+        width: 768px;
+        }
+        
+        footer{
+        height: 132px;
+        text-align: center;
+        }
+        
+        .footer__copyright{
+        padding-top: 88px;
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 24px;
+        }
+}
+
+
+@media screen and (max-width: 320px) and (max-width: 700px){
+    
+}
