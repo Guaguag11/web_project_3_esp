@@ -1,4 +1,4 @@
-/*aquÃ­ importar fonts*/
+
 @import url(Inter\ Web/inter.css
 );
 
@@ -11,18 +11,22 @@ src: url("Inter-Thin.woff2?v=3.19") format("woff2"),
 url("Inter-Thin.woff?v=3.19") format("woff");
 }
 
-*{
+.page{
+min-width: 320px;
+max-width: 1240px;
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+
 }
-
-
 
 .body{
 background-color: #2A2C2F;
 color: white;
 font-family: inter;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .header{
@@ -50,12 +54,10 @@ font-weight: 900;
 font-size: 96px;
 line-height: 100px;
 text-align: center;
-width: 793px;
 margin-bottom: 0;
 }
 
 .header__lead-subtitle{
-width: 720px;
 height: 72px;
 margin-top: 32px;
 font-weight: 400;
@@ -70,10 +72,8 @@ height: 615px;
 margin-bottom: 92px;
 }
 
-.main {
-display: flex;
-flex-direction: column;
-align-items: center;
+.main{
+display: contents;
 }
 
 .intro__title{
@@ -121,11 +121,6 @@ margin-bottom: 92px;
 height: 213px;
 }
 
-
-.places{
-        /*
-display: contents;
-*/}
 
 .places__article{
 width: 987px;
@@ -282,16 +277,22 @@ padding-bottom: 45px;
 }
 
 
-@media screen and (max-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px)and (max-width:1280px) {
 
-.body{
+        .body{
         margin:0; /*esto es temporal */
+        }
+
+        .header__lead-title{
+                width: auto;
         }
         .header__lead-subtitle{
         margin-top: 99px;
         }
         
         .header__lead-image{
+                width: 100%;
+
         margin-top: 69px;
         height: 634px;
         margin-bottom: 55px;
@@ -335,17 +336,10 @@ padding-bottom: 45px;
         
         
         .places__article{
-        display: grid;
-        grid-template-columns: minmax(308px, 1fr) minmax(333px, 1fr);
-        grid-template-rows: auto 1fr;
-        grid-gap: 28px;
-        padding-bottom: 69px;
-        row-gap: 50px;
-        padding-left: 191px;
+        grid-template-columns: auto;
+        width: auto;
         }
-        
-        /* aqui le habia puesto padding left 191px y se acomodaba pero ahora eso afecta abajo*/
-        
+
         .places__article-top{
         margin-top: 182px;
         }
@@ -387,6 +381,7 @@ padding-bottom: 45px;
         }
         
         .cover{
+                width: 100%;
         height: 746px;
         }
         
@@ -413,7 +408,7 @@ padding-bottom: 45px;
 }
 
 
-@media screen and (max-width: 320px) and (max-width: 700px){
+@media screen and (min-width: 320px) and (max-width:768px){
 
 .header{
 padding-top: 20px;
@@ -502,11 +497,17 @@ flex-direction: column;
 align-items: center;
 row-gap: 0%;
 padding-left: 0;
+width: auto;
+}
+
+.places__article-top{
+margin-top: 7px;
 }
 
 .places__article-title{
 height: 35px;
-font-size: 32px;
+font-size: 30px;
+min-width: auto;
 line-height: 35px;
 margin-bottom: 30px;
 }
@@ -587,6 +588,5 @@ height: 14px;
 font-size: 14px;
 line-height: 14px;
 padding-bottom: 24px;
-width: 117px;
 }
 }
