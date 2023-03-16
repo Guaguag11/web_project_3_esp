@@ -13,7 +13,7 @@ url("Inter-Thin.woff?v=3.19") format("woff");
 
 .page{
 min-width: 320px;
-max-width: 1240px;
+max-width: 1024px;
 margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -69,7 +69,7 @@ text-align: center;
 .header__lead-image{
 margin-top: 64px;
 height: 615px;
-margin-bottom: 92px;
+margin-bottom: 38px;
 }
 
 .main{
@@ -123,22 +123,30 @@ height: 213px;
 
 /* sos*/ 
 
-.places__article{
-width: 987px;
+.places{
+height: fit-content;
 display: grid;
-grid-template-columns: minmax(460px, 1fr) minmax(484px, 1fr);
+align-items: center;
+justify-content: center;
+max-width: 987px;
+
+}
+
+.places__article{
+display: grid;
+grid-template-columns: minmax(415px, 1fr) minmax(480px, 1fr);
 grid-template-rows: auto 1fr;
 grid-gap: 40px;
 padding-bottom: 100px;
 }
 
 .places__article-title{
-height: 152px;
 font-weight: 900;
 font-size: 72px;
 line-height: 76px;
 grid-column: 1;
 grid-row: 1;
+margin-bottom: 0;
 }
 
 .places__article-title-width{
@@ -187,7 +195,7 @@ grid-row: 2;
 font-weight: 400;
 font-size: 18px;
 line-height: 29.34px;
-padding-bottom: 17px;
+margin-top: 0;
 
 }
 
@@ -227,8 +235,8 @@ height: 740px;
 opacity: 70%;
 z-index: -1;
 position: absolute;
-background-position: center;
 }
+
 
 .cover__background:hover{
 opacity: 20%;
@@ -278,22 +286,21 @@ padding-bottom: 45px;
 }
 
 
-@media screen and (min-width: 768px)and (max-width:1280px) {
+@media screen and (min-width: 768px)and (max-width:1024px) {
 
         .body{
         margin:0; /*esto es temporal */
         }
 
         .header__lead-title{
-                width: auto;
+        width: auto;
         }
         .header__lead-subtitle{
         margin-top: 99px;
         }
         
         .header__lead-image{
-                width: 100%;
-
+        width: 100%;
         margin-top: 69px;
         height: 634px;
         margin-bottom: 55px;
@@ -393,6 +400,7 @@ padding-bottom: 45px;
         position: absolute;
         background-position: center;
         object-fit: cover;
+
         }
         
         footer{
