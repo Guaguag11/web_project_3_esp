@@ -1,0 +1,20 @@
+.cover{
+    position: relative;
+    height: 740px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    opacity: 100%;
+    }
+    
+    .cover:hover{
+    opacity:40%;
+    }
+
+    @media screen and (min-width: 768px)and (max-width:1024px){}
+
+@media screen and (min-width: 320px) and (max-width:768px){}
