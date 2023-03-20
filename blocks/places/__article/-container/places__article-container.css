@@ -14,4 +14,10 @@
     padding-bottom: 24px;
     }
 
-@media screen and (min-width: 320px) and (max-width:768px){}
+@media screen and (min-width: 320px) and (max-width:768px){
+    .places__article-container{
+    grid-column: unset;
+    grid-row: unset;
+    padding-bottom: 0px;
+        }
+}
