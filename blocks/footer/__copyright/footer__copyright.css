@@ -9,4 +9,12 @@
 
     @media screen and (min-width: 768px)and (max-width:1024px){}
 
-@media screen and (min-width: 320px) and (max-width:768px){}
+@media screen and (min-width: 320px) and (max-width:768px){
+    .footer__copyright{
+        padding-top: 64px;
+        height: 14px;
+        font-size: 14px;
+        line-height: 14px;
+        padding-bottom: 24px;
+        }
+}

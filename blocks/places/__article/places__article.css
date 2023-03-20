@@ -24,11 +24,7 @@
 
 @media screen and (min-width: 320px) and (max-width:768px){
     .places__article{
-    max-width: 320px;
-    height: 1491px;
-    display: flex;
-    flex-direction: column;
-    display: unset;
-    grid-template-columns: unset;
+        display: unset;
+        width: 100%;
     }
 }

@@ -20,5 +20,7 @@
     .places__article-title{
         font-size: 32px;
         line-height: 35px;
+        padding-bottom: 30px;
+        padding-left: 16px;
         }
 }
