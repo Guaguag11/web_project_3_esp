@@ -6,7 +6,6 @@
     grid-template-columns: minmax(411px, 1fr) minmax(448px, 1fr);
     grid-gap: 40px;
     padding-bottom: 30px;
-    border: 3px solid salmon;
     row-gap: 30px;
     }
 
@@ -17,7 +16,6 @@
         grid-template-columns: minmax(340px, 1fr) minmax(340px, 1fr);
         grid-gap: 28px;
         padding-bottom: 30px;
-        border: 3px solid darkolivegreen;
         }
 }
 

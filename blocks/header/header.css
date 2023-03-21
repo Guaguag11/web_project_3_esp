@@ -1,7 +1,6 @@
 .header{
     height: auto;
     width: 100%;
-    border: 1px solid orange;
     display: flex;
     justify-content: center;
     padding-top: 34px;

@@ -1,7 +1,6 @@
 .intro{
     width: 100%;
     height: auto;
-    border: 1px solid slateblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
